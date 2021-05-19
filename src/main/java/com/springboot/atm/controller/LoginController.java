@@ -28,6 +28,4 @@ public class LoginController {
         session.setAttribute("loginAccount", result.getObject());
         return ResponseEntity.ok(result);
     }
-
-
 }

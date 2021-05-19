@@ -17,7 +17,6 @@ public class CardModel {
     private String cardId;
     // false debito, true credito
     private Boolean carType;
-    private int money;
     @JsonIgnore
     private String password;
     private String customerId;
