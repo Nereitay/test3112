@@ -1,4 +1,4 @@
-package com.springboot.atm.config;
+package com.springboot.atm.common.util;
 
 import javax.servlet.http.HttpServletRequest;
 

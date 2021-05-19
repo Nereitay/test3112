@@ -14,7 +14,7 @@ spring:
       hibernate:
         format_sql: true
   datasource:
-    url: jdbc:mysql://db:3306/testatm?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/testatm?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -27,3 +27,7 @@ spring:
       max-lifetime: 1800000
       pool-name: DatebookHikariCP
       maximum-pool-size: 5
+logging:
+  level:
+    co.fengfeng: debug # info for ops
+  path: "D:/ideawork/test"  #log write rute

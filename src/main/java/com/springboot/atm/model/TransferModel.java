@@ -8,7 +8,7 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name = "transfer")
+@Table(name = "transfer_records")
 public class TransferModel {
     @Id
     @GeneratedValue(generator = "atmGenerator")

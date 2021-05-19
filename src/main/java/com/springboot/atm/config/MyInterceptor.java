@@ -1,5 +1,6 @@
 package com.springboot.atm.config;
 
+import com.springboot.atm.common.util.RequestUtil;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +13,7 @@ public class MyInterceptor implements HandlerInterceptor {
 
         Object loginAccount = request.getSession().getAttribute("loginAccount");
         if (loginAccount == null) {
-            request.setAttribute("meg", "please login");
+            request.setAttribute("msg", "please login");
             request.getRequestDispatcher("/login").forward(request, response);
             return false;
         }
