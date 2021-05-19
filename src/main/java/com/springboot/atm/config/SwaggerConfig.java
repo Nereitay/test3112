@@ -25,7 +25,7 @@ public class SwaggerConfig {
     //generate apiInfo
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("ATM-Cajero Automáticos API")
+                .title("ATM-Cajero Automáticos API yyyyy")
                 .description("Swagger2 build RESTful APIs")
                 .version("1.0.0")
                 .build();
